@@ -7,14 +7,23 @@
 
   <body>
     <!-- the entire body must be written by student -->
-    <div id="gameContainer" style="width: 400px; height: 400px">
-      <div id="scoreBoard">Score: <span id="score"></span></div>
-      <div id="gameGrid">
-        <div id="pixel1" class="pixel"></div>
-        <div id="pixel2" class="pixel"></div>
-        <!--more pixels-->
-      </div>
+    <div id="gameContainer"></div>
+
+    <!-- #scoreContainer contains the scores -->
+    <div id="scoreContainer">
+      <div class="scoreBoard">Your Score: <span id="pointsEarned">0</span></div>
     </div>
+
+    <!-- #onScreenControllers contains the navigation buttons for mobile screens -->
+    <div id="onScreenControllers">
+      <button id="leftButton">◀️</button>
+      <div>
+        <button id="upButton">🔼</button>
+        <button id="downButton">🔽</button>
+      </div>
+      <button id="rightButton">▶️</button>
+    </div>
+
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
