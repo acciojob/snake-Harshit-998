@@ -1,2 +1,51 @@
-
 /* Your CSS Code here. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.grid-container {
+  height: 600px;
+  width: 600px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.938);
+  /* background-color: transparent; */
+  border: 1px solid #000000cc;
+  /* padding: 20px; */
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.flex-box > input,
+button {
+  margin: 0 10px 0 0;
+}
+#flagsLeft {
+  color: white;
+}
+
+#result {
+  color: white;
+}
